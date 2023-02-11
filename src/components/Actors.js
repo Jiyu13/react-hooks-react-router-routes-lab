@@ -9,11 +9,11 @@ function Actors() {
       {
         actors.map(actor => {
           return (
-            <div>
+            <div key={actor.name}>
               <p>{actor.name}</p>
               <ul>
                 {actor.movies.map(movie => {
-                  return <li>{movie}</li>
+                  return <li key={movie}>{movie}</li>
                 })}
               </ul>
             </div>
