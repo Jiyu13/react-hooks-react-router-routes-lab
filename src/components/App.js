@@ -13,9 +13,9 @@ function App() {
       <NavBar />
 
       <Switch>
-        <React path="/directors">
+        <Route path="/directors">
           <Directors />
-        </React>
+        </Route>
         
         <Route path="/movies">
           <Movies />
